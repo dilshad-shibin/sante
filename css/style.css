@@ -328,8 +328,8 @@ a:hover {
 
 .slider_img img {
     min-width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    /* -o-object-fit: cover; */
+    /* object-fit: cover; */
     -o-object-position: 50% 50%;
     object-position: 50% 50%
 }
@@ -2674,7 +2674,7 @@ select.form-control.custom-select {
 }
 
 .blog-img_block img {
-    padding-left: 40px
+    /* padding-left: 40px */
 }
 
 .blog-date {
@@ -2687,7 +2687,8 @@ select.form-control.custom-select {
     left: 0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    display: none;
 }
 
 .blog-date span {
@@ -2784,7 +2785,7 @@ select.form-control.custom-select {
 }
 
 .blog-category_block {
-    padding: 50px 0
+    padding: 65px 0
 }
 
 .blog-category_block h3 {
