@@ -336,7 +336,8 @@ a:hover {
 
 @media(max-width:500px) {
     .slider_img img {
-        max-height: 730px
+        /* max-height: 730px */
+        max-height: 420px;
     }
 }
 
@@ -1394,6 +1395,10 @@ footer {
 
 .foot-logo {
     padding: 60px 0 34px
+}
+
+.foot-logo a:hover{
+    color: #d9534f;
 }
 
 .foot-logo p {
@@ -2832,6 +2837,14 @@ select.form-control.custom-select {
     border-bottom-color: #fff
 }
 
+.blog-featured_post a{
+    color: #000 !important;
+}
+
+.blog-featured_post a:hover{
+    color: #cbb58b !important;
+}
+
 .blog-featured_post h3 {
     font-weight: 700;
     margin: 0 0 24px
@@ -2844,6 +2857,11 @@ select.form-control.custom-select {
 .blog-featured-img_block img {
     float: left;
     margin: 0 28px 0 0
+}
+
+.blog-featured-img_block img:hover{
+    transform: scale(1.2);
+    transition: all .5s ease;
 }
 
 .blog-featured-img_block h5 {
@@ -2877,6 +2895,19 @@ select.form-control.custom-select {
     margin: 0 0 18px 18px;
     color: #313131;
     font-size: 14px
+}
+
+.blog-tags:hover{
+    color: #fff;
+    background-color: #cbb58b;
+    border-color: #cbb58b;
+    transition: all .5s ease;
+    transform: scale(1.1);
+}
+
+.blog-tags:hover span{
+    font-weight: bold;
+    transition: all ease;
 }
 
 .page-item {
