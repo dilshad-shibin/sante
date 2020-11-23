@@ -3004,7 +3004,7 @@ select.form-control.custom-select {
     background: #f4eee3;
     display: inline-block;
     padding: 4px 36px;
-    margin: 12px 0 0
+    margin: 12px 0 0 100px
 }
 
 .blogpost-quotes span {
@@ -3087,7 +3087,8 @@ p.blogpost-rply a {
 
 @media(max-width:992px) {
     .blogpost-quotes {
-        padding: 4px 6px
+        padding: 4px 6px;
+        margin-left: 0;
     }
 }
 
