@@ -2971,7 +2971,9 @@ select.form-control.custom-select {
     }
 
     .blog-featured-img_block img {
-        width: 100%;
+        width: 100px;
+        height: 100px;
+        float: none;
         margin: 0 0 10px
     }
 
@@ -4769,4 +4771,17 @@ div.panel p {
         -o-transition: all .2s ease;
         transition: all .2s ease
     }
+}
+
+.brochure-btn{
+    margin-top:50px
+}
+
+.brochure-btn .btn-brochure{
+    background-color: #2d2d2d;
+}
+
+.brochure-btn .btn-brochure:hover{
+    background-color: #d8c299 !important;
+    color: #000;
 }
