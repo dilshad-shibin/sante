@@ -162,6 +162,10 @@
     color: #505050;
 }
 
+.navbar-light .navbar-nav .nav-link-white{
+    color: #fff;
+}
+
 .navbar-light .navbar-toggler {
     border: 1px solid #cbb58b;
     z-index: 999;
