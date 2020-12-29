@@ -8,24 +8,28 @@ $(window).load(function () {
     $container.isotope({
         itemSelector: 'img'
     });
+    $container.isotope({
+        filter: '.Timune'
+    });
 
     function check_button() {
         $('.gallery-header-center-right-links').removeClass(button_class);
+        
         if (button == 1) {
-            $("#filter-all").addClass(button_class);
-            $("#gallery-header-center-left-title").html('All Galleries');
-        }
-        if (button == 2) {
             $("#filter-timune").addClass(button_class);
             $("#gallery-header-center-left-title").html('Timune Gallery');
         }
-        if (button == 3) {
+        if (button == 2) {
             $("#filter-santcal").addClass(button_class);
             $("#gallery-header-center-left-title").html('Santcal Gallery');
         }
-        if (button == 4) {
+        if (button == 3) {
             $("#filter-santvit").addClass(button_class);
             $("#gallery-header-center-left-title").html('Santvit Gallery');
+        }
+        if (button == 4) {
+            $("#filter-all").addClass(button_class);
+            $("#gallery-header-center-left-title").html('Complete Gallery');
         }
     }
 
@@ -45,30 +49,33 @@ $(window).load(function () {
     }
     $("#filter-all").click(function () {
         $container.isotope({
-            filter: '.all'
+            filter: '.Complete'
         });
-        button = 1;
+        button = 4;
         check_button();
     });
     $("#filter-timune").click(function () {
         $container.isotope({
             filter: '.Timune'
         });
-        button = 2;
+        button = 1;
         check_button();
     });
     $("#filter-santcal").click(function () {
+        // $('.Santcal1').css({
+        //     display: "block";
+        // })
         $container.isotope({
             filter: '.Santcal'
         });
-        button = 3;
+        button = 2;
         check_button();
     });
     $("#filter-santvit").click(function () {
         $container.isotope({
             filter: '.Santvit'
         });
-        button = 4;
+        button = 3;
         check_button();
     });
     $("#gallery-header-center-left-icon").click(function () {
